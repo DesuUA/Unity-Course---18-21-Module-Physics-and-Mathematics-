@@ -21,7 +21,7 @@ public class CrateRigidbody : MonoBehaviour , IMovable, IGrabbable
     
     public void Move(Vector3 direction, float force)
     {
-        _rigidbody.AddForce(Vector3.Normalize(direction) * force);
+        _rigidbody.AddForce(Vector3.Normalize(direction) * force, ForceMode.Impulse);
     }
 
     public void Grab(Transform grabber)
