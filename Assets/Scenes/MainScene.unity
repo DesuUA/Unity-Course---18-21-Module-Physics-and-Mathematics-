@@ -6701,22 +6701,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7da721c8053d545bd8c9d3e5ddecf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleSystemPrefab: {fileID: 5157417961435359714, guid: 388a7334f86b35246ac02a3e54e8dddc,
-    type: 3}
-  _groundLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  _objectsLayer:
-    serializedVersion: 2
-    m_Bits: 64
   _grabKey: 323
   _bombKey: 324
-  _bombRadius: 1.5
-  _bombForce: 10
   _offsetFromCamera: 5
   _zoomSpeed: 5
   _minScale: 2
   _maxScale: 20
+  _bombSettings:
+    particleSystemPrefab: {fileID: 5157417961435359714, guid: 388a7334f86b35246ac02a3e54e8dddc,
+      type: 3}
+    groundLayer:
+      serializedVersion: 2
+      m_Bits: 128
+    objectsLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    radius: 1
+    explodeForce: 5
 --- !u!1 &1545779739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ea1fdca9c2f529042ac72696af233a5c,
